@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
     const gifContainer = document.createElement('div');
     const gifImage = document.createElement('img');
-    gifImage.src = 'Cat Dance GIF - Cat Dance Cat Dance - Discover & Share GIFs.gif';
+    gifImage.src = 'Images/Cat Dance GIF - Cat Dance Cat Dance - Discover & Share GIFs.gif';
     gifImage.alt = 'GIF';
     gifImage.style.maxWidth = '100%';
     gifContainer.appendChild(gifImage);
