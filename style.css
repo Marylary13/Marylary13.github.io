@@ -167,8 +167,8 @@ footer {
     margin-left: 0px;
 }
 
-.project h2 {
-    margin-left: 70px; 
+.heading{
+    padding-left: 20px;
 }
 
 .project p {
