@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const thankYouText = document.createElement('div');
         thankYouText.textContent = 'Thank you for your feedback!';
         thankYouText.style.fontSize = '24px';
-        thankYouText.style.marginTop = '20px';
+        thankYouText.style.marginTop = '200px';
         document.body.appendChild(thankYouText);
     }
 
@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     gifImage.src = 'Images/Cat Dance GIF - Cat Dance Cat Dance - Discover & Share GIFs.gif';
     gifImage.alt = 'GIF';
     gifImage.style.maxWidth = '100%';
+    gifImage.style.marginTop = '100px';
     gifContainer.appendChild(gifImage);
     document.body.appendChild(gifContainer);
     }
@@ -29,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             hideAllElements();
         } else {
             clickCount++;
-            if (clickCount > 2) {
+            if (clickCount > 3) {
                 noBtn.style.transform = 'none';
                 noBtn.style.width = '120px';
                 noBtn.style.height = '40px';

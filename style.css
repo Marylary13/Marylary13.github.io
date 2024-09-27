@@ -10,42 +10,29 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    
 }
 
 .header-content {
     display: flex;
     align-items: center;
+    padding-top: 50px;
 }
 
 .profile-photo-container {
     position: relative;
-    width: 100px; 
-    height: 100px; 
+    width: 150px; 
+    height: 150px; 
     padding-left: 20px;
     margin-left: 20px;
 }
 
-.profile-photo, .another-photo {
+.profile-photo {
     width: 100%; 
     height: auto;
-    border-radius: 50%; 
+    border-radius: 40%; 
     position: absolute;
     top: 0;
     left: 0;
-    transition: opacity 0.5s ease; 
-}
-
-.another-photo {
-    opacity: 0; 
-}
-
-.profile-photo:hover {
-    opacity: 0; 
-}
-
-.profile-photo:hover + .another-photo {
-    opacity: 1; 
 }
 
 .header-text {
@@ -199,7 +186,6 @@ h1, h2, h3 {
 .feedback-body {
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
 }
@@ -228,12 +214,44 @@ h1, h2, h3 {
     display: none; 
 }
 
+.navbar{
+    background-color:#1a1919;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
 
+.navitems{
+    list-style-type:none;
+    overflow: hidden;
+    display: inline;
+}
 
+.items{
+    float: left;
+    display: flex;
+}
 
+.items a{
+    display: block;
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 30%;
+}
 
+.items a:hover{
+    background-color:  #51646f;
+}
 
-    
+.items a:active{
+    background-color:  #51646f;
+    text-decoration: none;
+
+}   
 
 
 
