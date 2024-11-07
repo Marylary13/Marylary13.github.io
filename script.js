@@ -34,21 +34,30 @@ document.addEventListener('DOMContentLoaded', function() {
             hideAllElements();
         } else {
             clickCount++;
-            if (clickCount > 2) {
+            if (clickCount > 1) {
                 noBtn.style.transform = 'none';
-                noBtn.style.width = '120px';
+                noBtn.style.width = '70px';  
                 noBtn.style.height = '40px';
-                noBtn.style.fontSize = '16px';
+                noBtn.style.fontSize = '15px';
                 noBtn.textContent = 'Yes';
             } else {
-                const x = Math.random() * window.innerWidth;
-                const y = Math.random() * window.innerHeight;
+                const btnWidth = noBtn.offsetWidth;
+                const btnHeight = noBtn.offsetHeight;
+                const maxX = window.innerWidth - btnWidth;
+                const maxY = window.innerHeight - btnHeight;
+    
+                const x = Math.random() * maxX;
+                const y = Math.random() * maxY;
+    
                 noBtn.style.transform = `translate(${x}px, ${y}px)`;
                 noBtn.style.fontSize = 'inherit';
                 noBtn.textContent = 'No';
             }
         }
     });
+    
+    
+    
 
     yesBtn.addEventListener('click', () => {
         hideAllElements();
