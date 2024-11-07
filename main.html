@@ -3,24 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/MARYAM.png" type="image/x-icon">
 </head>
-<body>
+<body class="main">
+
 
     <div class="navbar">
         <ul class="navitems">
             <li class="items"><a href="main.html" target="_blank">Overview</a></li>
             <li class="items"><a href="index.html" target="_blank">Resume</a></li>
             <li class="items"><a href="feedback.html" target="_blank">Feedback</a></li>
-            <li class="items"><a href="academic_record/AcademicPdf.pdf" target="_blank">Academic Record</a></li>
+            <li class="items"><a href="academic_record\AcademicPdf (2).pdf" target="_blank">Academic Record</a></li>
         </ul>
     </div>
 
+    <div class="wrapper"></div>
+
+<header class="mainHead">
+<h1 class="w">Welcome To My Website!</h1>
+</header>
+
+<section id="intro">
+    <div class="intro-container">
+        <div class="intro-text">
+            <p>
+                Hi there! My name is Maryam, I'm a dedicated student currently doing my Bachelors in Computing.
+                Here, you’ll find insights into my academic achievements, personal projects, and the experiences that have shaped my aspirations.
+            </p>
+        </div>
+        <div class="intro-image">
+            <img src="Images/Pink tulip.jpg" />
+        </div>
+</section>
+
+<h2 class="jo">My Journey</h2>
+
+<section class="journey">
+    
+    <div class="hs" id="hs">
+        <h3 class="colour">Highschool</h3>
+        <p>
+            My academic journey took a significant turn when I joined Bryanston High School in grade 10. 
+            I decided to select pure maths, biology, physics, and history for my high school subjects. 
+            Prior to this, I had attended a small school with limited access to computers, and I was unaware of the existence of 
+            subjects like IT and CAT. Despite my passion for gaming and technology from a young age, I never considered a 
+            career in software development.
+        </p>
+    </div>
+
+    <div class="matric" id="matric">
+        <h3 class="colour">Matric</h3>
+        <p>
+            My matric year was a challenging time, both academically and personally. Despite my hard work, 
+            I faced unexpected setbacks that left me feeling defeated. I did manage to pass all my subjects, 
+            although I didn't achieve the marks I needed to get into my desired course. Feeling lost and uncertain, I stumbled upon 
+            Belgium Campus ITversity and attended their open day. I was impressed by their Bachelor of Computing course and 
+            decided to take a chance and apply. This marked the beginning of my journey into the world of programming, and I was 
+            eager to learn and explore the opportunities that lay ahead.
+        </p>
+    </div>
+
+    <div class="uni" id="uni" >
+        <h3 class="colour">Freshman in University</h3>
+        <p>In my first year of university, I encountered a lot of challenges and often questioned my ability to make it in the field of programming. Despite this, I stayed positive and put a lot of work into my studies. My hard work paid off, as I managed to achieved seven distinctions that year.</p>
+    </div>
+
+    <div class="present" id="present">
+        <h3 class="colour">The Present</h3>
+        <p>Its been a long and hard journey. Every year got more and more difficult but in the end I managed to get where I wanted to be and found my passions. Third year has been quite the challenge, and yet I'm still standing STRONG. I hope to advance further in my career and studues, I feel like you're never too old to learn and I want to continue gaining knowledge as well as experience.</p>
+    </div>
+
+    
+</section>
+
+    <button class="jbtn" id="prevBtn" onclick="console.log('Previous button clicked'); changeParagraph(-1)">&#10094; </button>
+    <button class="jbtn" id="nextBtn" onclick="console.log('Next button clicked'); changeParagraph(1)"> &#10095;</button>
+
+    <section id="facts">
+        <h2 id="factshead">Fun Facts About Me</h2>
+        <div class="facts-container">
+            <div class="fact-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Images/sunflower.jpg" alt="Sunflower" width="200px" height="auto">
+                    </div>
+                    <div class="card-back">
+                        <p>Due to my father's early life in Canada, I hold Canadian citizenship by default.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Images/self.jpg" alt="Black Dress" width="200px" height="auto">
+                    </div>
+                    <div class="card-back">
+                        <p>I love dressing up for special occasions!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Images/eyes_closed.jpg" alt="Eyes Closed" width="200px" height="auto">
+                    </div>
+                    <div class="card-back">
+                        <p>I enjoy taking candid photos with friends.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fact-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="Images/tofu.jpg" alt="Tofu" width="200px" height="auto">
+                    </div>
+                    <div class="card-back">
+                        <p>I'm a fan of trying out new vegetarian recipes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <p>&copy; 2024 Maryam Jhavary</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
